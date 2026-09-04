@@ -41,9 +41,12 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="Aliado Food" className="h-12 w-12 rounded-2xl" />
-            <span className="font-display font-black text-2xl">
-              ALIADO <span className="text-brand-gold">FOOD</span>
+            <img src="/logo.svg" alt="Aliado Food" className="h-12 w-12 rounded-2xl shadow-neon" />
+            <span>
+              <span className="font-display font-black text-2xl block">
+                ALIADO <span className="text-brand-gold">FOOD</span>
+              </span>
+              <span className="block text-brand-gold/80 text-sm font-semibold">Seu aliado na fome.</span>
             </span>
           </div>
           <p className="mt-5 text-white/60 text-sm leading-relaxed">

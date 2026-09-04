@@ -42,7 +42,7 @@ export function Navbar() {
             <span className="block font-display font-black text-xl text-white tracking-tight">
               ALIADO <span className="text-brand-gold">FOOD</span>
             </span>
-            <span className="block text-[11px] uppercase tracking-[0.25em] text-white/60">Sabor que chega até si</span>
+            <span className="block text-[11px] uppercase tracking-[0.25em] text-brand-gold/80">Seu aliado na fome.</span>
           </span>
         </Link>
 

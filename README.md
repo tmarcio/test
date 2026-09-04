@@ -156,20 +156,23 @@ data/                        # Base de dados SQLite (criada em runtime, fora do 
 
 | Uso | Cor |
 |---|---|
-| Vermelho Aliado | `#D62828` (`brand-red`) |
-| Vermelho escuro | `#A31F1F` (`brand-redDark`) |
-| Dourado | `#F4A300` (`brand-gold`) |
-| Dourado claro | `#FFC24B` (`brand-goldLight`) |
-| Escuro premium | `#16100E` (`brand-dark`) |
+| Vermelho Aliado (logótipo) | `#C62E1F` (`brand-red`) |
+| Vermelho escuro | `#9E1F16` (`brand-redDark`) |
+| Dourado da colher | `#F0A12E` (`brand-gold`) |
+| Dourado claro | `#F6B95C` (`brand-goldLight`) |
+| Laranja do cabo | `#E8762C` (`brand-orange`) |
+| Escuro premium | `#120E0C` (`brand-dark`) |
 | Creme de fundo | `#FBF5EC` (`brand-cream`) |
 
 Todos os tokens estão em `tailwind.config.ts`.
 
 ## 🖼️ Logótipo
 
-O logótipo atual (`public/logo.svg`) é uma versão vetorial provisória nas cores oficiais. Para usar o
-logótipo oficial: substitui o ficheiro `public/logo.svg` (idealmente SVG/PNG transparente com fundo
-redondo/quadrado) e, se quiseres, atualiza também `app/icon.svg`.
+O logótipo oficial está aplicado em todo o site (`public/logo.svg`, `app/icon.svg` e cabeçalho): círculo
+vermelho `#C62E1F` com garfo branco e colher dourada/laranja, acompanhado pelo slogan **“Seu aliado na fome.”**
+
+> Se tiveres o ficheiro PNG original do logótipo (o anexo não chegou ao ambiente de trabalho), basta
+> substituir `public/logo.svg` por ele — ou envia-o e aplico já a versão raster oficial.
 
 ## ☁️ Deploy
 

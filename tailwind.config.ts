@@ -9,12 +9,13 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          red: '#D62828',
-          redDark: '#A31F1F',
-          gold: '#F4A300',
-          goldLight: '#FFC24B',
-          dark: '#16100E',
-          dark2: '#241A16',
+          red: '#C62E1F',
+          redDark: '#9E1F16',
+          gold: '#F0A12E',
+          goldLight: '#F6B95C',
+          orange: '#E8762C',
+          dark: '#120E0C',
+          dark2: '#1E1613',
           cream: '#FBF5EC',
           creamDark: '#F3E9DA',
         },
