@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Trebuchet MS', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-cream text-brand-dark font-body antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(100deg, #ffc24b 10%, #f4a300 45%, #ffdf8e 70%, #f4a300 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  @apply bg-white/90 backdrop-blur-xl border border-white/40 shadow-card;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-bold transition-all duration-200 cursor-pointer select-none;
+}
+
+.btn-primary {
+  @apply btn bg-brand-red text-white px-7 py-3.5 hover:bg-brand-redDark hover:shadow-neon active:scale-[0.98];
+}
+
+.btn-gold {
+  @apply btn bg-brand-gold text-brand-dark px-7 py-3.5 hover:bg-brand-goldLight hover:shadow-neon active:scale-[0.98];
+}
+
+.btn-dark {
+  @apply btn bg-brand-dark text-white px-7 py-3.5 hover:bg-black active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply btn border-2 border-brand-dark/20 text-brand-dark px-7 py-3.5 hover:border-brand-red hover:text-brand-red active:scale-[0.98];
+}
+
+.btn-whatsapp {
+  @apply btn bg-[#25D366] text-white px-7 py-3.5 hover:bg-[#1eb457] active:scale-[0.98];
+}
+
+.input {
+  @apply w-full rounded-xl border border-brand-dark/15 bg-white px-4 py-3 text-brand-dark outline-none transition focus:border-brand-red focus:ring-4 focus:ring-brand-red/10 placeholder:text-brand-dark/35;
+}
+
+.label {
+  @apply block text-sm font-bold text-brand-dark mb-1.5;
+}
+
+.card {
+  @apply rounded-3xl bg-white shadow-card border border-brand-dark/5 overflow-hidden;
+}
+
+.section-pad {
+  @apply py-20 md:py-28;
+}
+
+.container-lg {
+  @apply mx-auto w-full max-w-7xl px-5 md:px-8;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-bold transition cursor-pointer;
+}
+
+.timeline-dot {
+  @apply w-5 h-5 rounded-full border-4 shrink-0;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(214, 40, 40, 0.35);
+  border-radius: 999px;
+}
+
+.hero-noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}

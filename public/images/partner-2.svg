@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1A120D"/>
+  <circle cx="200" cy="190" r="140" fill="#F4A300" opacity="0.12"/>
+  <path d="M200 90c-40 50-70 90-70 130 0 42 32 70 70 70s70-28 70-70c0-40-30-80-70-130z" fill="#F4A300"/>
+  <path d="M200 250c22-30 10-60-10-80-16 24-26 52-8 78z" fill="#FFF7E6"/>
+  <path d="M170 300h60l8 26h-76z" fill="#D62828"/>
+  <text x="200" y="368" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FBF5EC" text-anchor="middle">PARTNER</text>
+</svg>

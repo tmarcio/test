@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#241A16"/>
+  <circle cx="200" cy="200" r="150" fill="#D62828" opacity="0.12"/>
+  <path d="M172 96h56l6 44v180a26 26 0 0 1-26 26h-16a26 26 0 0 1-26-26V140z" fill="#F4A300"/>
+  <path d="M162 140h76v160a18 18 0 0 1-18 18h-40a18 18 0 0 1-18-18z" fill="#16100E"/>
+  <path d="M166 160h68v120a14 14 0 0 1-14 14h-40a14 14 0 0 1-14-14z" fill="#D62828"/>
+  <path d="M170 170h60M170 180h60M170 190h60" stroke="#FFF" stroke-width="3" opacity="0.2"/>
+  <text x="196" y="250" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="#FFF7E6" text-anchor="middle" transform="rotate(90 196 250)">ALIADO</text>
+  <path d="M186 88h28l6 26h-40z" fill="#F4A300"/>
+  <circle cx="200" cy="106" r="4" fill="#8F1616"/>
+  <circle cx="278" cy="120" r="34" fill="#FFF7E6" opacity="0.9"/>
+  <circle cx="266" cy="132" r="8" fill="#FFC24B"/>
+</svg>

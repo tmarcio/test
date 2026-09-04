@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D62828"/>
+      <stop offset="1" stop-color="#8F1616"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#F4A300"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="200" height="200" rx="44" fill="url(#bg)"/>
+  <path d="M100 128c-34 0-58-16-64-24 8-14 34-28 64-28s56 14 64 28c-6 8-30 24-64 24z" fill="url(#gold)"/>
+  <path d="M56 104c14 22 74 22 88 0l4 24c-14 22-82 22-96 0z" fill="#FFFFFF" opacity="0.92"/>
+  <rect x="96" y="24" width="8" height="18" rx="4" fill="url(#gold)"/>
+  <path d="M70 42c-14 14-14 36 0 46l14-8c-8-8-8-24 0-30zM130 42c14 14 14 36 0 46l-14-8c8-8 8-24 0-30z" fill="url(#gold)"/>
+  <circle cx="100" cy="66" r="26" fill="#FFF7E6"/>
+  <text x="100" y="78" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#D62828" text-anchor="middle">A</text>
+  <path d="M100 140l14 22h-28z" fill="#16100E"/>
+</svg>
