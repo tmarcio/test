@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#FBF5EC"/>
+  <circle cx="200" cy="200" r="150" fill="#D62828" opacity="0.08"/>
+  <g transform="translate(200,190)">
+    <path d="M0-110C-60-110-110-70-110-10v20C-110 60-60 100 0 100S110 60 110-10v-20C110-70 60-110 0-110z" fill="#D62828"/>
+    <path d="M0-84C-46-84-86-54-86-10v14C-86 48-46 76 0 76S86 48 86 4v-14C86-54 46-84 0-84z" fill="#FFF7E6"/>
+    <path d="M0-56C-28-56-50-36-50-8c0 30 22 52 50 52s50-22 50-52c0-28-22-48-50-48z" fill="#F4A300"/>
+    <circle cx="0" cy="-8" r="26" fill="#FFF7E6"/>
+    <path d="M0-8l10 16h-20z" fill="#D62828"/>
+  </g>
+  <text x="200" y="352" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#16100E" text-anchor="middle">PARTNER</text>
+</svg>

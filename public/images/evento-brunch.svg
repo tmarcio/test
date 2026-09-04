@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF5EC"/>
+      <stop offset="1" stop-color="#F3E9DA"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg3)"/>
+  <circle cx="520" cy="80" r="70" fill="#FFC24B"/>
+  <path d="M120 300c40-30 90-40 140-20 60 24 120 10 160-30 30 40 30 90-10 130H110c-30-30-20-60 10-80z" fill="#D62828" opacity="0.15"/>
+  <g transform="translate(420,220)">
+    <ellipse cx="0" cy="40" rx="130" ry="18" fill="#16100E" opacity="0.12"/>
+    <path d="M-90 10h180l-16 70h-148z" fill="#FFF"/>
+    <path d="M-84 20h168l-10 50h-148z" fill="#F4A300"/>
+    <path d="M-36 0c0-40 72-40 72 0z" fill="#FFF"/>
+    <rect x="-52" y="-18" width="104" height="12" rx="6" fill="#D62828"/>
+    <circle cx="-30" cy="8" r="7" fill="#D62828"/><circle cx="0" cy="8" r="7" fill="#D62828"/><circle cx="30" cy="8" r="7" fill="#D62828"/>
+  </g>
+  <text x="60" y="130" font-family="Arial Black, Arial, sans-serif" font-size="54" font-weight="900" fill="#16100E">BRUNCH</text>
+  <text x="60" y="190" font-family="Arial Black, Arial, sans-serif" font-size="54" font-weight="900" fill="#D62828">DE FAMÍLIA</text>
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="24" fill="#16100E" opacity="0.7">manhãs para toda a família</text>
+</svg>
