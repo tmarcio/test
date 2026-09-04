@@ -257,7 +257,7 @@ export function CartDrawer() {
                       </span>
                     </div>
                     <p className="text-xs text-brand-dark/50 mt-2 flex items-center gap-1.5">
-                      <IconRoute width={14} height={14} /> Taxa baseada na tabela Yango (entrega por motorizada, Luanda).
+                      <IconRoute width={14} height={14} /> Taxa de referência para entrega por motorizada, em Luanda.
                     </p>
                   </div>
 

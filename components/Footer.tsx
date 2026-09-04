@@ -116,7 +116,7 @@ export function Footer() {
             <li className="flex justify-between"><span>Domingo</span><span className="font-bold text-white">10h00 – 21h00</span></li>
           </ul>
           <p className="mt-6 text-xs text-white/40 leading-relaxed">
-            Entregas em toda a província de Luanda. Taxa de entrega calculada por município com base na tabela Yango
+            Entregas em toda a província de Luanda. Taxa de entrega calculada automaticamente por município
             (entrega por motorizada).
           </p>
         </div>

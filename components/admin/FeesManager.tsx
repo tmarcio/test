@@ -59,7 +59,7 @@ export function FeesManager() {
       <header className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="font-display font-black text-3xl text-brand-dark">Taxas de entrega</h1>
-          <p className="text-brand-dark/55 mt-1">Baseadas na tabela oficial Yango — Delivery by motorizada, Luanda.</p>
+          <p className="text-brand-dark/55 mt-1">Taxas de referência de entregas por motorizada na província de Luanda.</p>
         </div>
         <button onClick={() => { setEditing({ active: true, province: 'Luanda', baseFee: MUNICIPALITY_TABLE.base, perKm: MUNICIPALITY_TABLE.perKm, adjustment: 0, sort: rows.length + 1 }); setError(''); }} className="btn-primary !py-2.5 text-sm">
           <IconPlus /> Novo município
@@ -132,7 +132,7 @@ export function FeesManager() {
               <Field label="Tempo estimado (min)">
                 <input type="number" min={0} value={editing.estMinutes || ''} onChange={(e) => setEditing({ ...editing, estMinutes: Number(e.target.value) })} className="input" />
               </Field>
-              <Field label="Taxa base Yango (Kz)">
+              <Field label="Taxa base (Kz)">
                 <input type="number" min={0} step={10} value={editing.baseFee ?? ''} onChange={(e) => setEditing({ ...editing, baseFee: Number(e.target.value) })} className="input" />
               </Field>
               <Field label="Valor por km adicional (Kz/km)">

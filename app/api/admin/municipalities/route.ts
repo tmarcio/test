@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/api-guard';
-import { getDb, yangoDeliveryFee } from '@/lib/db';
+import { getDb, deliveryFeeByDistance } from '@/lib/db';
 import { rowToMunicipality } from '@/lib/serialize';
 
 export const dynamic = 'force-dynamic';
@@ -13,7 +13,7 @@ export async function GET(req: Request) {
     .all() as Record<string, unknown>[];
   return NextResponse.json(rows.map((r) => {
     const m = rowToMunicipality(r);
-    return { ...m, fee: yangoDeliveryFee(m) };
+    return { ...m, fee: deliveryFeeByDistance(m) };
   }));
 }
 

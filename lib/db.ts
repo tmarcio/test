@@ -133,7 +133,7 @@ function migrate(db: Database.Database) {
   `);
 }
 
-export function yangoDeliveryFee(m: {
+export function deliveryFeeByDistance(m: {
   baseFee: number;
   perKm: number;
   distanceKm: number;

@@ -93,7 +93,7 @@ export function Hero() {
               </span>
               <div>
                 <p className="font-bold text-sm text-brand-dark">Entrega por motorizada</p>
-                <p className="text-xs text-brand-dark/60">Estafetas Aliado + parceiros Yango</p>
+                <p className="text-xs text-brand-dark/60">Estafetas Aliado dedicados</p>
               </div>
             </div>
 

@@ -7,12 +7,12 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 };
 
 export const MUNICIPALITY_TABLE = {
-  source: 'Tabela oficial Yango Angola — Delivery by moto, Luanda',
+  source: 'Taxas de referência — entrega por motorizada em Luanda',
   base: 292.5,
   perKm: 51.3,
   includedKm: 2.3,
   validUntil: '08.09.2026',
-  note: 'Taxa = máximo(292,50 Kz; 292,50 Kz + 51,30 Kz × (distância − 2,3 km)), arredondada a múltiplos de 50 Kz, tal como a Yango.',
+  note: 'Taxa = máximo(292,50 Kz; 292,50 Kz + 51,30 Kz × (distância − 2,3 km)), arredondada a múltiplos de 50 Kz.',
 };
 
 export const initialProducts = [
@@ -163,8 +163,8 @@ export const initialProducts = [
 ];
 
 /**
- * Municípios da província de Luanda. As taxas seguem a tabela oficial
- * Yango (Delivery by moto) e a distância estimada a partir do ponto de
+ * Municípios da província de Luanda. As taxas seguem a tabela de referência
+ * de entregas por motorizada e a distância estimada a partir do ponto de
  * venda central da Aliado Food. Podem ser editadas no painel de administração.
  */
 export const initialMunicipalities: Municipality[] = [
@@ -214,10 +214,10 @@ export const initialPartners = [
   },
   {
     id: 4,
-    name: 'Yango Angola',
+    name: 'Rede de Estafetas Aliado',
     description: 'Entregas rápidas por motorizada em toda a cidade.',
     image: '/images/partner-4.svg',
-    url: 'https://yango.com/pt_ao/',
+    url: '',
     active: true,
     sort: 4,
   },

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getDb, yangoDeliveryFee } from '@/lib/db';
+import { getDb, deliveryFeeByDistance } from '@/lib/db';
 import { MUNICIPALITY_TABLE } from '@/lib/catalog';
 import { rowToMunicipality } from '@/lib/serialize';
 
@@ -11,7 +11,7 @@ export async function GET() {
     .all() as Record<string, unknown>[];
   const municipalities = rows.map((r) => {
     const m = rowToMunicipality(r);
-    return { ...m, fee: yangoDeliveryFee(m) };
+    return { ...m, fee: deliveryFeeByDistance(m) };
   });
   return NextResponse.json({ municipalities, table: MUNICIPALITY_TABLE });
 }

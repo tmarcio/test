@@ -2,7 +2,7 @@
 
 Website e sistema de encomendas completo do **Aliado Food** (Luanda, Angola): refeições, pizzas e bebidas com
 levantamento no ponto de venda ou **entrega por motorizada**, com **taxa calculada automaticamente pelo município**
-com base na tabela oficial da **Yango Angola** (Delivery by moto).
+com base numa tabela de referência de taxas de entregas por motorizada.
 
 Construído com **Next.js 14 + TypeScript + Tailwind CSS + SQLite**, com painel de administração completo e
 possibilidade de carregar (upload) imagens no cardápio, parceiros e atividades.
@@ -20,7 +20,7 @@ possibilidade de carregar (upload) imagens no cardápio, parceiros e atividades.
   2. Levantar no ponto de venda **ou** receber em casa
   3. Dados do cliente (nome, telefone, e-mail opcional, método de pagamento, notas)
   4. Revisão e selagem do pedido
-- **Taxa de entrega instantânea por município** — ao selecionar o município, a taxa (baseada na tabela Yango)
+- **Taxa de entrega instantânea por município** — ao selecionar o município, a taxa (tabela de referência de motorizadas)
   aparece de imediato. Bairro e rua são opcionais.
 - **Referência de rastreio** (`AF-XXXXXX`) criada pelo sistema após o pedido.
 - **Página de rastreamento** com linha do tempo do estado da encomenda.
@@ -37,7 +37,7 @@ possibilidade de carregar (upload) imagens no cardápio, parceiros e atividades.
 - **Gestão de encomendas**: confirmar → preparar → pronto → entregue/cancelar, notas de historial.
 - **Atribuição de estafetas disponíveis** + botão para **notificar o estafeta pelo WhatsApp**.
 - **Cardápio**: criar/editar/eliminar produtos com **upload de imagem**.
-- **Taxas / Municípios**: editar distância, taxa base Yango, Kz/km, ajuste manual e ativação —
+- **Taxas / Municípios**: editar distância, taxa base, Kz/km, ajuste manual e ativação —
   a taxa exibida ao cliente é recalculada automaticamente.
 - **Estafetas**: cadastro, zona, motorizada, classificação e estado disponível/indisponível.
 - **Parceiros e Atividades**: gestão completa com **upload de imagens**.
@@ -105,18 +105,18 @@ SMTP_FROM=Aliado Food <aliadofood@hotmail.com>
 
 ---
 
-## 🛵 Taxas de entrega (tabela Yango)
+## 🛵 Taxas de entrega (tabela de referência)
 
-A taxa segue a tabela oficial **Yango Angola — Delivery by moto (Luanda)**:
+A taxa segue uma tabela de referência de entregas por motorizada em Luanda:
 
 | Parâmetro | Valor |
 |---|---|
 | Taxa mínima | **Kz 292,50** (2,3 km incluídos) |
 | + por km adicional | **Kz 51,30/km** |
-| Arredondamento | múltiplos de 50 Kz (como a Yango) |
-| Validade da tabela consultada | até 08.09.2026 [fonte](https://yango.com/luanda/tariff/courier) |
+| Arredondamento | múltiplos de 50 Kz |
+| Validade da tabela de referência | até 08.09.2026 |
 
-Cálculo aplicado (base de dados → `lib/db.ts` → `yangoDeliveryFee`):
+Cálculo aplicado (base de dados → `lib/db.ts` → `deliveryFeeByDistance`):
 
 ```
 taxa = máximo(292,50 ; 292,50 + 51,30 × (distância estimada − 2,3))
@@ -143,7 +143,7 @@ components/                  # UI (carrinho, checkout, secções, painel admin)
 lib/
 ├── db.ts                    # SQLite + schema + seed
 ├── catalog.ts               # Dados oficiais iniciais (cardápio, municípios, parceiros…)
-├── orders.ts                # Lógica de encomendas + taxa Yango
+├── orders.ts                # Lógica de encomendas + taxa de entrega
 ├── whatsapp.ts              # Ligações/mensagens WhatsApp
 ├── mailer.ts                # E-mail (nodemailer)
 └── types.ts                 # Tipos + contactos oficiais da marca

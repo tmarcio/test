@@ -1,4 +1,4 @@
-import { getDb, yangoDeliveryFee } from './db';
+import { getDb, deliveryFeeByDistance } from './db';
 import { generateRef, sanitizeText } from './format';
 import type { Order, OrderEvent, OrderItem, OrderStatus } from './types';
 
@@ -114,7 +114,7 @@ export function getMunicipality(id: number) {
     distanceKm: row.distance_km,
     adjustment: row.adjustment,
     estMinutes: row.est_minutes,
-    fee: yangoDeliveryFee({ baseFee: row.base_fee, perKm: row.per_km, distanceKm: row.distance_km, adjustment: row.adjustment }),
+    fee: deliveryFeeByDistance({ baseFee: row.base_fee, perKm: row.per_km, distanceKm: row.distance_km, adjustment: row.adjustment }),
   };
 }
 
